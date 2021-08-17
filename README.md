@@ -1,2 +1,2 @@
-# ki-sommer
+# KI Sommer Schule
 Webseite der KI Sommerschule
