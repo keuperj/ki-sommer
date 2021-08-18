@@ -1,11 +1,11 @@
 # KI Sommer Schule
-Die Hochschulen Offenburg und Karlsruhe veranstalten im Rahmen des KI-Labors Südbaden eine gemeinsame **KI Sommerschule**. 
+Die Hochschulen **Offenburg und Karlsruhe** veranstalten im Rahmen des KI-Labors Südbaden eine gemeinsame **KI Sommerschule**. 
 
 ## Termin Mo 20. - Fr 24.9.2001
 Täglich 9-12.30 Uhr und 13.30-17 Uhr mit Pausen. 
 
 ## Modus
-In der Summer School werden die Grundlagen aktueller KI und Machine Learning Methoden vermittelt werden. Dabei legen wir großen Wert auf Praxisnähe! Knapp 50% des Kurses bestehen aus praktischen Programmierübungen anhand von konkreten Aufgaben aus der Praxis…
+In der Sommerschule werden die Grundlagen aktueller KI und Machine Learning Methoden vermittelt werden. Dabei legen wir großen Wert auf Praxisnähe! Knapp 50% des Kurses bestehen aus praktischen Programmierübungen anhand von konkreten Aufgaben aus der Praxis…
 
 ### Covid-19 Maßnahmen und Regeln
 Derzeit planen wir mit einer Präsentzveranstaltung nach den 3G Regeln, d.h. Teilnehmer müssen geimpft, genesen oder getestet sein. Sollten sich die Rahmenbedingungen bis zum Kurs ändern, ist auch ein Wechsel auf ein reines Online-Format möglich. 
@@ -87,7 +87,7 @@ Janis Keuper leitet das "Institute for Machine Learning and Analytics" (IMLA) an
 ## Anmeldung / Kosten
 Die Teilnahme am Kurs ist Gebührenfrei. Auf Grund der begrenzten Teilnehmerzahl werden wir bei zu vielen Anmeldungen aber ein auswahl treffen müssen. Z.B. kannt die maximale Anzahl an Teilnehmern einer Firma festgelegt werden.
 
-### ONLINE ANMELDUNG
+### [ONLINE ANMELDUNG](https://www.eventbrite.de/e/ki-sommerschule-tickets-167592813617)
 
 ## FAQ
 * **Welche Programmierkenntnisse werden vorrausgesetz?** Teilnehmer sollten grundlegende Kenntinisse und Erfahrung im Umgang mit einer Programmiersprache wie Python, Java, C/C++, Matlab usw mitbringen. D.h. einfache Paradigmen wir Schleifen, Klassen und Datenstrukturen sollten geläufig sein. Der Kurs wird in die Python-Grundlagen einführen. 
