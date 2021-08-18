@@ -31,12 +31,14 @@ Janis Keuper leitet das "Institute for Machine Learning and Analytics" (IMLA) an
 ### Prof. Dr. Daniela Oelke (HS Offenburg)
 
 
-
-
-
 ## Vorläufiges Programm
 
 ## Anmeldung / Kosten
+Die Teilnahme am Kurs ist Gebührenfrei. Auf Grund der begrenzten Teilnehmerzahl werden wir bei zu vielen Anmeldungen aber ein auswahl treffen müssen. Z.B. kannt die maximale Anzahl an Teilnehmern einer Firma festgelegt werden.
+
+### ONLINE ANMELDUNG
 
 ## FAQ
+* **Welche Programmierkenntnisse werden vorrausgesetz?** Teilnehmer sollten grundlegende Kenntinisse und Erfahrung im Umgang mit einer Programmiersprache wie Python, Java, C/C++, Matlab usw mitbringen. D.h. einfache Paradigmen wir Schleifen, Klassen und Datenstrukturen sollten geläufig sein. Der Kurs wird in die Python-Grundlagen einführen. 
 
+* **Kann ich auch nur an Teilen des Kurses Teilnehmen?** Eher nicht. Die Einzelnen Module bauen aufeinander auf und Teilnehmer sollten an allen Modulen teilnehmen. Im Einzelfall kann natürlich mal ein Modul aus terminlichen Gründen ausgelassen werden.
