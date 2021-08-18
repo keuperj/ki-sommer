@@ -19,6 +19,8 @@ Zielgruppe sind Mitarbeiterinnen und Mitarbeiter aus Fachabteilungen oder der IT
 ## Dozenten
 
 ### Prof. Dr. Patrick Baier (HS Karlsruhe)
+Patrick Baier ist Professor für maschinelles Lernen an der Hochschule Karlsruhe. Sein Schwerpunkt liegt im Einsatz von maschinellen Lernverfahren um konkrete Anwendungsfälle zu lösen. Zudem beschäftigt er sich im Rahmen von Vorlesungen und studentischen Projekten mit aktuellen Verfahren des Deep Learning mit speziellem Fokus auf Deep Reinforcement Learning.
+
 
 ### Prof. Dr.-Ing. Klaus Dorer (HS Offenburg)
 Klaus Dorer ist Leiter des Labors Autonome Systeme an der Hochschule Offenburg. Er leitet bzw. wirkt mit an verschiedenen Projekten zum Thema maschinelles Lernen wie dem Projekt Menschen Lernen Maschinelles Lernen (ML2), dem Projekt Magma, bei dem simulierte Fußballroboter lernen Fußball zu spielen (amtierende Vizeweltmeister), dem Projekt Sweaty, bei dem ein echter humanoider Roboter Fußball spielt (amtierender Weltmeister).
@@ -54,10 +56,10 @@ Janis Keuper leitet das "Institute for Machine Learning and Analytics" (IMLA) an
 *Ort: KA*
 
 ### Mi: ML Anwendungen I - Angewandtes Machine Learning
-* Recap: Model Training (with Coding Example) 
-* Model Evaluation and Business KPIs 
-* ML Lifecycle
-* ML Operations 
+* Lösen eines Anwendungsbeispiel aus der Praxis 
+* Methoden der Modellevaluation und Business KPIs
+* Modelle im Livebetrieb: Deployment und Monitoring
+* Entwicklung von ML-basierten Produkten
 
 *Dozent: Patrick Baier*
 
@@ -85,12 +87,12 @@ Janis Keuper leitet das "Institute for Machine Learning and Analytics" (IMLA) an
 *Ort: OG*
 
 ## Anmeldung / Kosten
-Die Teilnahme am Kurs ist Gebührenfrei. Auf Grund der begrenzten Teilnehmerzahl werden wir bei zu vielen Anmeldungen aber ein auswahl treffen müssen. Z.B. kannt die maximale Anzahl an Teilnehmern einer Firma festgelegt werden.
+Die Teilnahme am Kurs ist gebührenfrei. Auf Grund der begrenzten Teilnehmerzahl werden wir bei zu vielen Anmeldungen aber ein Auswahl treffen müssen. Z.B. kann die maximale Anzahl an Teilnehmern einer Firma festgelegt werden.
 
 ### [ONLINE ANMELDUNG](https://www.eventbrite.de/e/ki-sommerschule-tickets-167592813617)
 
 ## FAQ
-* **Welche Programmierkenntnisse werden vorrausgesetz?** Teilnehmer sollten grundlegende Kenntinisse und Erfahrung im Umgang mit einer Programmiersprache wie Python, Java, C/C++, Matlab usw mitbringen. D.h. einfache Paradigmen wir Schleifen, Klassen und Datenstrukturen sollten geläufig sein. Der Kurs wird in die Python-Grundlagen einführen. 
+* **Welche Programmierkenntnisse werden vorrausgesetz?** Teilnehmer sollten grundlegende Kenntnisse und Erfahrung im Umgang mit einer Programmiersprache wie Python, Java, C/C++, Matlab usw mitbringen. D.h. einfache Paradigmen wir Schleifen, Klassen und Datenstrukturen sollten geläufig sein. Der Kurs wird in die Python-Grundlagen einführen. 
 
 * **Kann ich auch nur an Teilen des Kurses Teilnehmen?** Eher nicht. Die Einzelnen Module bauen aufeinander auf und Teilnehmer sollten an allen Modulen teilnehmen. Im Einzelfall kann natürlich mal ein Modul aus terminlichen Gründen ausgelassen werden.
 
