@@ -33,6 +33,57 @@ Janis Keuper leitet das "Institute for Machine Learning and Analytics" (IMLA) an
 
 ## Vorläufiges Programm
 
+### Mo: Einführung in Python  und ML Basics
+* Einführung Python und Numpy
+* Praktische Übungen Python und Numpy
+* Einführung ML
+* Unsupervised Learning
+
+*Dozent: Janis Keuper*
+
+*Ort: KA*
+
+### Di: Einführung in  ML Basics II
+* Supervised Learning: Linear Models
+* Praktische Übung Klassifikation mit Scikit-Learn
+* Supervised Learning: Non-Linear Models
+* Praktische Übung: Pipelines, Crossvalidation und Random-Search mit Scikit Learn
+
+*Dozent: Janis Keuper*
+
+*Ort: KA*
+
+### Mi: ML Anwendungen I - Angewandtes Machine Learning
+* Recap: Model Training (with Coding Example) 
+* Model Evaluation and Business KPIs 
+* ML Lifecycle
+* ML Operations 
+
+*Dozent: Patrick Baier*
+
+*Ort: KA*
+
+### Do: Einführung Deep Learning
+* Neuronale Netzwerke
+* Praktische Übung Neuronale Netzwerke
+* Deep Leaarning
+* Praktische Übung Deep Learning
+
+*Dozent: Klaus Dorer*
+
+*Ort: OG*
+
+
+### Fr: ML Anwendungen II
+* Natural Language Processing
+* Praktische Übungen Natural Language Processing
+* Anwendung NN
+* Praktische Übung Awendung NN
+
+*Dozenten: Daniela Oelke und NN*
+
+*Ort: ÓG*
+
 ## Anmeldung / Kosten
 Die Teilnahme am Kurs ist Gebührenfrei. Auf Grund der begrenzten Teilnehmerzahl werden wir bei zu vielen Anmeldungen aber ein auswahl treffen müssen. Z.B. kannt die maximale Anzahl an Teilnehmern einer Firma festgelegt werden.
 
