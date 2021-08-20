@@ -25,10 +25,11 @@ Patrick Baier ist Professor für maschinelles Lernen an der Hochschule Karlsruhe
 ### Prof. Dr.-Ing. Klaus Dorer (HS Offenburg)
 Klaus Dorer ist Leiter des Labors Autonome Systeme an der Hochschule Offenburg. Er leitet bzw. wirkt mit an verschiedenen Projekten zum Thema maschinelles Lernen wie dem Projekt Menschen Lernen Maschinelles Lernen (ML2), dem Projekt Magma, bei dem simulierte Fußballroboter lernen Fußball zu spielen (amtierende Vizeweltmeister), dem Projekt Sweaty, bei dem ein echter humanoider Roboter Fußball spielt (amtierender Weltmeister).
 
-### Prof. Dr. Peer Kuepers (HS Karlsruhe)
 
 ### Prof. Dr.-Ing. Janis Keuper (HS Offenburg)
 Janis Keuper leitet das "Institute for Machine Learning and Analytics" (IMLA) an der HS Offenburg. Seine Forschungsgebiete liegen in den Bereichen "Large Scale Machine Learning" / Big Data, Generativen Lernmethoden und der Sicherheit und Robustheit von KI Verfahren. In den Kurs wird er seine langjährige Erfahrung aus einer Vielzahl von Industrieprojekten mit einem sehr breiten Anwendungsspektrum einbringen.
+
+### Prof. Dr. Peer Kuepers (HS Karlsruhe)
 
 ### Prof. Dr. Daniela Oelke (HS Offenburg)
 Daniela Oelke ist Professorin für Maschinelles Lernen an der Hochschule Offenburg. Ihr Forschungsschwerpunkt liegt im Bereich der Visuellen Datenanalyse und der Erklärbaren Künstlichen Intelligenz. In dem Kurs wird sie Methoden zur Verarbeitung natürlichsprachlicher Daten vorstellen.
