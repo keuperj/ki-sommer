@@ -1,7 +1,7 @@
 # KI Sommer Schule
 Die Hochschulen **Offenburg und Karlsruhe** veranstalten im Rahmen des KI-Labors Südbaden eine gemeinsame **KI Sommerschule**. 
 
-## Termin Mo 20. - Fr 24.9.2001
+## Termin Mo 20. - Fr 24.9.2021
 Täglich 9-12.30 Uhr und 13.30-17 Uhr mit Pausen. 
 
 ## Modus
