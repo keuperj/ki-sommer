@@ -40,19 +40,21 @@ Daniela Oelke ist Professorin für Maschinelles Lernen an der Hochschule Offenbu
 * Einführung Python und Numpy
 * Praktische Übungen Python und Numpy
 * Einführung ML
-* Unsupervised Learning
+* Supervised Learning: Linear Models
+* Praktische Übung mit Scikit-Learn
+
 
 *Dozent: Janis Keuper*
 
 *Ort: KA*
 
 ### Di: Einführung in  ML Basics II
-* Supervised Learning: Linear Models
-* Praktische Übung Klassifikation mit Scikit-Learn
+* Unsupervised Learning
+* Praktische Übung mit Scikit-Learn
 * Supervised Learning: Non-Linear Models
 * Praktische Übung: Pipelines, Crossvalidation und Random-Search mit Scikit Learn
 
-*Dozent: Janis Keuper*
+*Dozent: Peer Kuepers*
 
 *Ort: KA*
 
@@ -81,9 +83,9 @@ Daniela Oelke ist Professorin für Maschinelles Lernen an der Hochschule Offenbu
 * Natural Language Processing
 * Praktische Übungen Natural Language Processing
 * Anwendung NN
-* Praktische Übung Anwendung NN
 
-*Dozenten: Daniela Oelke und NN*
+
+*Dozenten: Daniela Oelke*
 
 *Ort: OG*
 
