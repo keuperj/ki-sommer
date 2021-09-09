@@ -22,7 +22,7 @@ Zielgruppe sind Mitarbeiterinnen und Mitarbeiter aus Fachabteilungen oder der IT
 Patrick Baier ist Professor für maschinelles Lernen an der Hochschule Karlsruhe. Sein Schwerpunkt liegt im Einsatz von maschinellen Lernverfahren um konkrete Anwendungsfälle zu lösen. Zudem beschäftigt er sich im Rahmen von Vorlesungen und studentischen Projekten mit aktuellen Verfahren des Deep Learning mit speziellem Fokus auf Deep Reinforcement Learning.
 
 
-### Prof. Dr.-Ing. Klaus Dorer (HS Offenburg)
+### Prof. Dr. Klaus Dorer (HS Offenburg)
 Klaus Dorer ist Leiter des Labors Autonome Systeme an der Hochschule Offenburg. Er leitet bzw. wirkt mit an verschiedenen Projekten zum Thema maschinelles Lernen wie dem Projekt Menschen Lernen Maschinelles Lernen (ML2), dem Projekt Magma, bei dem simulierte Fußballroboter lernen Fußball zu spielen (amtierende Vizeweltmeister), dem Projekt Sweaty, bei dem ein echter humanoider Roboter Fußball spielt (amtierender Weltmeister).
 
 
