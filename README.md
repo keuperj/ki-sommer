@@ -94,6 +94,8 @@ Die Teilnahme am Kurs ist gebührenfrei. Auf Grund der begrenzten Teilnehmerzahl
 
 ### [ONLINE ANMELDUNG](https://www.eventbrite.de/e/ki-sommerschule-tickets-167592813617)
 
+**Anmeldeschluß: 17.9. EOD** 
+
 ## FAQ
 * **Welche Programmierkenntnisse werden vorrausgesetz?** Teilnehmer sollten grundlegende Kenntnisse und Erfahrung im Umgang mit einer Programmiersprache wie Python, Java, C/C++, Matlab usw mitbringen. D.h. einfache Paradigmen wir Schleifen, Klassen und Datenstrukturen sollten geläufig sein. Der Kurs wird in die Python-Grundlagen einführen. 
 
