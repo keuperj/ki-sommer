@@ -30,6 +30,7 @@ Klaus Dorer ist Leiter des Labors Autonome Systeme an der Hochschule Offenburg. 
 Janis Keuper leitet das "Institute for Machine Learning and Analytics" (IMLA) an der HS Offenburg. Seine Forschungsgebiete liegen in den Bereichen "Large Scale Machine Learning" / Big Data, Generativen Lernmethoden und der Sicherheit und Robustheit von KI Verfahren. In den Kurs wird er seine langjährige Erfahrung aus einer Vielzahl von Industrieprojekten mit einem sehr breiten Anwendungsspektrum einbringen.
 
 ### Prof. Dr. Peer Kuepers (HS Karlsruhe)
+Peer Küppers ist Professor für Data Science und Analytics an der Hochschule Karlsruhe. Sein Schwerpunkt liegt auf der Gestaltung und dem Einsatz von Big Data- sowie Analytics-Architekturen und maschineller Lernverfahren in betrieblichen Anwendungen, insbesondere dem Supply Chain Management.
 
 ### Prof. Dr. Daniela Oelke (HS Offenburg)
 Daniela Oelke ist Professorin für Maschinelles Lernen an der Hochschule Offenburg. Ihr Forschungsschwerpunkt liegt im Bereich der Visuellen Datenanalyse und der Erklärbaren Künstlichen Intelligenz. In dem Kurs wird sie Methoden zur Verarbeitung natürlichsprachlicher Daten vorstellen.
