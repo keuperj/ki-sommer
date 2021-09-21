@@ -55,7 +55,7 @@ Daniela Oelke ist Professorin für Maschinelles Lernen an der Hochschule Offenbu
 * Supervised Learning: Non-Linear Models
 * Praktische Übung: Pipelines, Crossvalidation und Random-Search mit Scikit Learn
 
-*Dozent: Peer Kuepers*
+*Dozent: Peer Küppers*
 
 *Ort: KA*
 
