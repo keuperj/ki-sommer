@@ -1,0 +1,1790 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Aufgabe 1"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "1. Laden Sie den Datensatz automobile.csv von GitHub runter.\n",
+    "2. Starten Sie ein neues Jupyter Notebook und laden Sie die Daten in einen\n",
+    "Pandas DataFrame."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import pandas as pd"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>index</th>\n",
+       "      <th>company</th>\n",
+       "      <th>body-style</th>\n",
+       "      <th>wheel-base</th>\n",
+       "      <th>length</th>\n",
+       "      <th>engine-type</th>\n",
+       "      <th>num-of-cylinders</th>\n",
+       "      <th>horsepower</th>\n",
+       "      <th>average-mileage</th>\n",
+       "      <th>price</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>0</td>\n",
+       "      <td>alfa-romero</td>\n",
+       "      <td>convertible</td>\n",
+       "      <td>88.6</td>\n",
+       "      <td>168.8</td>\n",
+       "      <td>dohc</td>\n",
+       "      <td>four</td>\n",
+       "      <td>111</td>\n",
+       "      <td>21</td>\n",
+       "      <td>13495.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>1</td>\n",
+       "      <td>alfa-romero</td>\n",
+       "      <td>convertible</td>\n",
+       "      <td>88.6</td>\n",
+       "      <td>168.8</td>\n",
+       "      <td>dohc</td>\n",
+       "      <td>four</td>\n",
+       "      <td>111</td>\n",
+       "      <td>21</td>\n",
+       "      <td>16500.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>2</td>\n",
+       "      <td>alfa-romero</td>\n",
+       "      <td>hatchback</td>\n",
+       "      <td>94.5</td>\n",
+       "      <td>171.2</td>\n",
+       "      <td>ohcv</td>\n",
+       "      <td>six</td>\n",
+       "      <td>154</td>\n",
+       "      <td>19</td>\n",
+       "      <td>16500.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>3</th>\n",
+       "      <td>3</td>\n",
+       "      <td>audi</td>\n",
+       "      <td>sedan</td>\n",
+       "      <td>99.8</td>\n",
+       "      <td>176.6</td>\n",
+       "      <td>ohc</td>\n",
+       "      <td>four</td>\n",
+       "      <td>102</td>\n",
+       "      <td>24</td>\n",
+       "      <td>13950.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>4</th>\n",
+       "      <td>4</td>\n",
+       "      <td>audi</td>\n",
+       "      <td>sedan</td>\n",
+       "      <td>99.4</td>\n",
+       "      <td>176.6</td>\n",
+       "      <td>ohc</td>\n",
+       "      <td>five</td>\n",
+       "      <td>115</td>\n",
+       "      <td>18</td>\n",
+       "      <td>17450.0</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "   index      company   body-style  wheel-base  length engine-type  \\\n",
+       "0      0  alfa-romero  convertible        88.6   168.8        dohc   \n",
+       "1      1  alfa-romero  convertible        88.6   168.8        dohc   \n",
+       "2      2  alfa-romero    hatchback        94.5   171.2        ohcv   \n",
+       "3      3         audi        sedan        99.8   176.6         ohc   \n",
+       "4      4         audi        sedan        99.4   176.6         ohc   \n",
+       "\n",
+       "  num-of-cylinders  horsepower  average-mileage    price  \n",
+       "0             four         111               21  13495.0  \n",
+       "1             four         111               21  16500.0  \n",
+       "2              six         154               19  16500.0  \n",
+       "3             four         102               24  13950.0  \n",
+       "4             five         115               18  17450.0  "
+      ]
+     },
+     "execution_count": 2,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df = pd.read_csv(\"../data/automobile.csv\")\n",
+    "df.head()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "3. Schauen Sie sich die Daten an und versuchen Sie zu verstehen was die Daten abbilden.\n",
+    "4. Geben Sie folgende Daten aus:"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "4.1. Eine Liste aller Hersteller."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array(['alfa-romero', 'audi', 'bmw', 'chevrolet', 'dodge', 'honda',\n",
+       "       'isuzu', 'jaguar', 'mazda', 'mercedes-benz', 'mitsubishi',\n",
+       "       'nissan', 'porsche', 'toyota', 'volkswagen', 'volvo'], dtype=object)"
+      ]
+     },
+     "execution_count": 3,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df[\"company\"].unique()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "4.2. Wie oft welcher „body-style“ im Datensatz vorhanden ist."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "sedan          32\n",
+       "hatchback      15\n",
+       "wagon           9\n",
+       "convertible     3\n",
+       "hardtop         2\n",
+       "Name: body-style, dtype: int64"
+      ]
+     },
+     "execution_count": 4,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df[\"body-style\"].value_counts()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "4.3. Die fünf Autos mit dem niedrigsten Preis."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>index</th>\n",
+       "      <th>company</th>\n",
+       "      <th>body-style</th>\n",
+       "      <th>wheel-base</th>\n",
+       "      <th>length</th>\n",
+       "      <th>engine-type</th>\n",
+       "      <th>num-of-cylinders</th>\n",
+       "      <th>horsepower</th>\n",
+       "      <th>average-mileage</th>\n",
+       "      <th>price</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>13</th>\n",
+       "      <td>16</td>\n",
+       "      <td>chevrolet</td>\n",
+       "      <td>hatchback</td>\n",
+       "      <td>88.4</td>\n",
+       "      <td>141.1</td>\n",
+       "      <td>l</td>\n",
+       "      <td>three</td>\n",
+       "      <td>48</td>\n",
+       "      <td>47</td>\n",
+       "      <td>5151.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>27</th>\n",
+       "      <td>36</td>\n",
+       "      <td>mazda</td>\n",
+       "      <td>hatchback</td>\n",
+       "      <td>93.1</td>\n",
+       "      <td>159.1</td>\n",
+       "      <td>ohc</td>\n",
+       "      <td>four</td>\n",
+       "      <td>68</td>\n",
+       "      <td>30</td>\n",
+       "      <td>5195.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>48</th>\n",
+       "      <td>66</td>\n",
+       "      <td>toyota</td>\n",
+       "      <td>hatchback</td>\n",
+       "      <td>95.7</td>\n",
+       "      <td>158.7</td>\n",
+       "      <td>ohc</td>\n",
+       "      <td>four</td>\n",
+       "      <td>62</td>\n",
+       "      <td>35</td>\n",
+       "      <td>5348.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>36</th>\n",
+       "      <td>49</td>\n",
+       "      <td>mitsubishi</td>\n",
+       "      <td>hatchback</td>\n",
+       "      <td>93.7</td>\n",
+       "      <td>157.3</td>\n",
+       "      <td>ohc</td>\n",
+       "      <td>four</td>\n",
+       "      <td>68</td>\n",
+       "      <td>37</td>\n",
+       "      <td>5389.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>28</th>\n",
+       "      <td>37</td>\n",
+       "      <td>mazda</td>\n",
+       "      <td>hatchback</td>\n",
+       "      <td>93.1</td>\n",
+       "      <td>159.1</td>\n",
+       "      <td>ohc</td>\n",
+       "      <td>four</td>\n",
+       "      <td>68</td>\n",
+       "      <td>31</td>\n",
+       "      <td>6095.0</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "    index     company body-style  wheel-base  length engine-type  \\\n",
+       "13     16   chevrolet  hatchback        88.4   141.1           l   \n",
+       "27     36       mazda  hatchback        93.1   159.1         ohc   \n",
+       "48     66      toyota  hatchback        95.7   158.7         ohc   \n",
+       "36     49  mitsubishi  hatchback        93.7   157.3         ohc   \n",
+       "28     37       mazda  hatchback        93.1   159.1         ohc   \n",
+       "\n",
+       "   num-of-cylinders  horsepower  average-mileage   price  \n",
+       "13            three          48               47  5151.0  \n",
+       "27             four          68               30  5195.0  \n",
+       "48             four          62               35  5348.0  \n",
+       "36             four          68               37  5389.0  \n",
+       "28             four          68               31  6095.0  "
+      ]
+     },
+     "execution_count": 5,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df.sort_values(\"price\").head(5)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "4.4. Die fünf Autos mit dem höchsten Preis."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>index</th>\n",
+       "      <th>company</th>\n",
+       "      <th>body-style</th>\n",
+       "      <th>wheel-base</th>\n",
+       "      <th>length</th>\n",
+       "      <th>engine-type</th>\n",
+       "      <th>num-of-cylinders</th>\n",
+       "      <th>horsepower</th>\n",
+       "      <th>average-mileage</th>\n",
+       "      <th>price</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>35</th>\n",
+       "      <td>47</td>\n",
+       "      <td>mercedes-benz</td>\n",
+       "      <td>hardtop</td>\n",
+       "      <td>112.0</td>\n",
+       "      <td>199.2</td>\n",
+       "      <td>ohcv</td>\n",
+       "      <td>eight</td>\n",
+       "      <td>184</td>\n",
+       "      <td>14</td>\n",
+       "      <td>45400.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>11</th>\n",
+       "      <td>14</td>\n",
+       "      <td>bmw</td>\n",
+       "      <td>sedan</td>\n",
+       "      <td>103.5</td>\n",
+       "      <td>193.8</td>\n",
+       "      <td>ohc</td>\n",
+       "      <td>six</td>\n",
+       "      <td>182</td>\n",
+       "      <td>16</td>\n",
+       "      <td>41315.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>34</th>\n",
+       "      <td>46</td>\n",
+       "      <td>mercedes-benz</td>\n",
+       "      <td>sedan</td>\n",
+       "      <td>120.9</td>\n",
+       "      <td>208.1</td>\n",
+       "      <td>ohcv</td>\n",
+       "      <td>eight</td>\n",
+       "      <td>184</td>\n",
+       "      <td>14</td>\n",
+       "      <td>40960.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>46</th>\n",
+       "      <td>62</td>\n",
+       "      <td>porsche</td>\n",
+       "      <td>convertible</td>\n",
+       "      <td>89.5</td>\n",
+       "      <td>168.9</td>\n",
+       "      <td>ohcf</td>\n",
+       "      <td>six</td>\n",
+       "      <td>207</td>\n",
+       "      <td>17</td>\n",
+       "      <td>37028.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>12</th>\n",
+       "      <td>15</td>\n",
+       "      <td>bmw</td>\n",
+       "      <td>sedan</td>\n",
+       "      <td>110.0</td>\n",
+       "      <td>197.0</td>\n",
+       "      <td>ohc</td>\n",
+       "      <td>six</td>\n",
+       "      <td>182</td>\n",
+       "      <td>15</td>\n",
+       "      <td>36880.0</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "    index        company   body-style  wheel-base  length engine-type  \\\n",
+       "35     47  mercedes-benz      hardtop       112.0   199.2        ohcv   \n",
+       "11     14            bmw        sedan       103.5   193.8         ohc   \n",
+       "34     46  mercedes-benz        sedan       120.9   208.1        ohcv   \n",
+       "46     62        porsche  convertible        89.5   168.9        ohcf   \n",
+       "12     15            bmw        sedan       110.0   197.0         ohc   \n",
+       "\n",
+       "   num-of-cylinders  horsepower  average-mileage    price  \n",
+       "35            eight         184               14  45400.0  \n",
+       "11              six         182               16  41315.0  \n",
+       "34            eight         184               14  40960.0  \n",
+       "46              six         207               17  37028.0  \n",
+       "12              six         182               15  36880.0  "
+      ]
+     },
+     "execution_count": 6,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df.sort_values(\"price\", ascending=False).head(5)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Aufgabe 2"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "1. Was ist der durchschnittliche Preis mit Bezug auf den „body-style“ eines Autos?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>price</th>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>body-style</th>\n",
+       "      <th></th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>convertible</th>\n",
+       "      <td>22341.000000</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>hardtop</th>\n",
+       "      <td>39714.000000</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>hatchback</th>\n",
+       "      <td>7159.571429</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>sedan</th>\n",
+       "      <td>17706.333333</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>wagon</th>\n",
+       "      <td>12730.111111</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "                    price\n",
+       "body-style               \n",
+       "convertible  22341.000000\n",
+       "hardtop      39714.000000\n",
+       "hatchback     7159.571429\n",
+       "sedan        17706.333333\n",
+       "wagon        12730.111111"
+      ]
+     },
+     "execution_count": 7,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "style_price = df[[\"price\", \"body-style\"]].groupby(\"body-style\").mean()\n",
+    "style_price"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "2. Welches sind die drei „body-styles“ mit den durchschnittlich höchsten Preisen?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>price</th>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>body-style</th>\n",
+       "      <th></th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>hardtop</th>\n",
+       "      <td>39714.000000</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>convertible</th>\n",
+       "      <td>22341.000000</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>sedan</th>\n",
+       "      <td>17706.333333</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "                    price\n",
+       "body-style               \n",
+       "hardtop      39714.000000\n",
+       "convertible  22341.000000\n",
+       "sedan        17706.333333"
+      ]
+     },
+     "execution_count": 8,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "style_price.sort_values(\"price\", ascending=False).head(3)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "3. Welche Companies stellen „hardtop“ als „body-style“ her?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "35    mercedes-benz\n",
+       "45          porsche\n",
+       "Name: company, dtype: object"
+      ]
+     },
+     "execution_count": 9,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df[df[\"body-style\"]==\"hardtop\"][\"company\"]"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "4.1. Scatterplot mit `x=\"horsepower\"` und `y=\"average-mileage\"`:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "<AxesSubplot:xlabel='horsepower', ylabel='average-mileage'>"
+      ]
+     },
+     "execution_count": 10,
+     "metadata": {},
+     "output_type": "execute_result"
+    },
+    {
+     "data": {
+      "image/png": "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\n",
+      "text/plain": [
+       "<Figure size 432x288 with 1 Axes>"
+      ]
+     },
+     "metadata": {
+      "needs_background": "light"
+     },
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "df.plot.scatter(x=\"horsepower\", y=\"average-mileage\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "4.2. Scatterplot mit `x=\"horsepower\"` und `y=\"price\"`:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "<AxesSubplot:xlabel='horsepower', ylabel='price'>"
+      ]
+     },
+     "execution_count": 11,
+     "metadata": {},
+     "output_type": "execute_result"
+    },
+    {
+     "data": {
+      "image/png": "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\n",
+      "text/plain": [
+       "<Figure size 432x288 with 1 Axes>"
+      ]
+     },
+     "metadata": {
+      "needs_background": "light"
+     },
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "df.plot.scatter(x=\"horsepower\", y=\"price\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Aufgabe 3"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "1. Geben Sie alle Autos aus deren Herstellername mit „a“ oder „b“ beginnt"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>index</th>\n",
+       "      <th>company</th>\n",
+       "      <th>body-style</th>\n",
+       "      <th>wheel-base</th>\n",
+       "      <th>length</th>\n",
+       "      <th>engine-type</th>\n",
+       "      <th>num-of-cylinders</th>\n",
+       "      <th>horsepower</th>\n",
+       "      <th>average-mileage</th>\n",
+       "      <th>price</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>0</td>\n",
+       "      <td>alfa-romero</td>\n",
+       "      <td>convertible</td>\n",
+       "      <td>88.6</td>\n",
+       "      <td>168.8</td>\n",
+       "      <td>dohc</td>\n",
+       "      <td>four</td>\n",
+       "      <td>111</td>\n",
+       "      <td>21</td>\n",
+       "      <td>13495.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>1</td>\n",
+       "      <td>alfa-romero</td>\n",
+       "      <td>convertible</td>\n",
+       "      <td>88.6</td>\n",
+       "      <td>168.8</td>\n",
+       "      <td>dohc</td>\n",
+       "      <td>four</td>\n",
+       "      <td>111</td>\n",
+       "      <td>21</td>\n",
+       "      <td>16500.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>2</td>\n",
+       "      <td>alfa-romero</td>\n",
+       "      <td>hatchback</td>\n",
+       "      <td>94.5</td>\n",
+       "      <td>171.2</td>\n",
+       "      <td>ohcv</td>\n",
+       "      <td>six</td>\n",
+       "      <td>154</td>\n",
+       "      <td>19</td>\n",
+       "      <td>16500.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>3</th>\n",
+       "      <td>3</td>\n",
+       "      <td>audi</td>\n",
+       "      <td>sedan</td>\n",
+       "      <td>99.8</td>\n",
+       "      <td>176.6</td>\n",
+       "      <td>ohc</td>\n",
+       "      <td>four</td>\n",
+       "      <td>102</td>\n",
+       "      <td>24</td>\n",
+       "      <td>13950.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>4</th>\n",
+       "      <td>4</td>\n",
+       "      <td>audi</td>\n",
+       "      <td>sedan</td>\n",
+       "      <td>99.4</td>\n",
+       "      <td>176.6</td>\n",
+       "      <td>ohc</td>\n",
+       "      <td>five</td>\n",
+       "      <td>115</td>\n",
+       "      <td>18</td>\n",
+       "      <td>17450.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>5</th>\n",
+       "      <td>5</td>\n",
+       "      <td>audi</td>\n",
+       "      <td>sedan</td>\n",
+       "      <td>99.8</td>\n",
+       "      <td>177.3</td>\n",
+       "      <td>ohc</td>\n",
+       "      <td>five</td>\n",
+       "      <td>110</td>\n",
+       "      <td>19</td>\n",
+       "      <td>15250.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>6</th>\n",
+       "      <td>6</td>\n",
+       "      <td>audi</td>\n",
+       "      <td>wagon</td>\n",
+       "      <td>105.8</td>\n",
+       "      <td>192.7</td>\n",
+       "      <td>ohc</td>\n",
+       "      <td>five</td>\n",
+       "      <td>110</td>\n",
+       "      <td>19</td>\n",
+       "      <td>18920.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>7</th>\n",
+       "      <td>9</td>\n",
+       "      <td>bmw</td>\n",
+       "      <td>sedan</td>\n",
+       "      <td>101.2</td>\n",
+       "      <td>176.8</td>\n",
+       "      <td>ohc</td>\n",
+       "      <td>four</td>\n",
+       "      <td>101</td>\n",
+       "      <td>23</td>\n",
+       "      <td>16430.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>8</th>\n",
+       "      <td>10</td>\n",
+       "      <td>bmw</td>\n",
+       "      <td>sedan</td>\n",
+       "      <td>101.2</td>\n",
+       "      <td>176.8</td>\n",
+       "      <td>ohc</td>\n",
+       "      <td>four</td>\n",
+       "      <td>101</td>\n",
+       "      <td>23</td>\n",
+       "      <td>16925.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>9</th>\n",
+       "      <td>11</td>\n",
+       "      <td>bmw</td>\n",
+       "      <td>sedan</td>\n",
+       "      <td>101.2</td>\n",
+       "      <td>176.8</td>\n",
+       "      <td>ohc</td>\n",
+       "      <td>six</td>\n",
+       "      <td>121</td>\n",
+       "      <td>21</td>\n",
+       "      <td>20970.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>10</th>\n",
+       "      <td>13</td>\n",
+       "      <td>bmw</td>\n",
+       "      <td>sedan</td>\n",
+       "      <td>103.5</td>\n",
+       "      <td>189.0</td>\n",
+       "      <td>ohc</td>\n",
+       "      <td>six</td>\n",
+       "      <td>182</td>\n",
+       "      <td>16</td>\n",
+       "      <td>30760.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>11</th>\n",
+       "      <td>14</td>\n",
+       "      <td>bmw</td>\n",
+       "      <td>sedan</td>\n",
+       "      <td>103.5</td>\n",
+       "      <td>193.8</td>\n",
+       "      <td>ohc</td>\n",
+       "      <td>six</td>\n",
+       "      <td>182</td>\n",
+       "      <td>16</td>\n",
+       "      <td>41315.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>12</th>\n",
+       "      <td>15</td>\n",
+       "      <td>bmw</td>\n",
+       "      <td>sedan</td>\n",
+       "      <td>110.0</td>\n",
+       "      <td>197.0</td>\n",
+       "      <td>ohc</td>\n",
+       "      <td>six</td>\n",
+       "      <td>182</td>\n",
+       "      <td>15</td>\n",
+       "      <td>36880.0</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "    index      company   body-style  wheel-base  length engine-type  \\\n",
+       "0       0  alfa-romero  convertible        88.6   168.8        dohc   \n",
+       "1       1  alfa-romero  convertible        88.6   168.8        dohc   \n",
+       "2       2  alfa-romero    hatchback        94.5   171.2        ohcv   \n",
+       "3       3         audi        sedan        99.8   176.6         ohc   \n",
+       "4       4         audi        sedan        99.4   176.6         ohc   \n",
+       "5       5         audi        sedan        99.8   177.3         ohc   \n",
+       "6       6         audi        wagon       105.8   192.7         ohc   \n",
+       "7       9          bmw        sedan       101.2   176.8         ohc   \n",
+       "8      10          bmw        sedan       101.2   176.8         ohc   \n",
+       "9      11          bmw        sedan       101.2   176.8         ohc   \n",
+       "10     13          bmw        sedan       103.5   189.0         ohc   \n",
+       "11     14          bmw        sedan       103.5   193.8         ohc   \n",
+       "12     15          bmw        sedan       110.0   197.0         ohc   \n",
+       "\n",
+       "   num-of-cylinders  horsepower  average-mileage    price  \n",
+       "0              four         111               21  13495.0  \n",
+       "1              four         111               21  16500.0  \n",
+       "2               six         154               19  16500.0  \n",
+       "3              four         102               24  13950.0  \n",
+       "4              five         115               18  17450.0  \n",
+       "5              five         110               19  15250.0  \n",
+       "6              five         110               19  18920.0  \n",
+       "7              four         101               23  16430.0  \n",
+       "8              four         101               23  16925.0  \n",
+       "9               six         121               21  20970.0  \n",
+       "10              six         182               16  30760.0  \n",
+       "11              six         182               16  41315.0  \n",
+       "12              six         182               15  36880.0  "
+      ]
+     },
+     "execution_count": 12,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df[df[\"company\"].str.startswith(\"a\") | df[\"company\"].str.startswith(\"b\")]"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "2. Erstellen Sie einen zweiten DataFrame, der diese Informationen enthält:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "data = {\"company\": [\"alfa-romero\", \"audi\", \"bmw\", \"volvo\", \"nissan\", \"mazda\"], \"country\":[\"ITA\", \"GER\",\"GER\", \"SWE\", \"JAP\", \"JAP\"]}\n",
+    "df2 = pd.DataFrame(data)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>company</th>\n",
+       "      <th>country</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>alfa-romero</td>\n",
+       "      <td>ITA</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>audi</td>\n",
+       "      <td>GER</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>bmw</td>\n",
+       "      <td>GER</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>3</th>\n",
+       "      <td>volvo</td>\n",
+       "      <td>SWE</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>4</th>\n",
+       "      <td>nissan</td>\n",
+       "      <td>JAP</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "       company country\n",
+       "0  alfa-romero     ITA\n",
+       "1         audi     GER\n",
+       "2          bmw     GER\n",
+       "3        volvo     SWE\n",
+       "4       nissan     JAP"
+      ]
+     },
+     "execution_count": 14,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df2.head()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "3. Verbinden Sie die zwei DataFrames mit `merge`. Stellen Sie sicher, dass die Datenpunkte welche keine Länderangabe haben nicht verloren gehen."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Datenpunkte vor dem merge (61, 10)\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"Datenpunkte vor dem merge\", df.shape)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Datenpunkte nach dem merge (61, 11)\n"
+     ]
+    },
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>index</th>\n",
+       "      <th>company</th>\n",
+       "      <th>body-style</th>\n",
+       "      <th>wheel-base</th>\n",
+       "      <th>length</th>\n",
+       "      <th>engine-type</th>\n",
+       "      <th>num-of-cylinders</th>\n",
+       "      <th>horsepower</th>\n",
+       "      <th>average-mileage</th>\n",
+       "      <th>price</th>\n",
+       "      <th>country</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>0</td>\n",
+       "      <td>alfa-romero</td>\n",
+       "      <td>convertible</td>\n",
+       "      <td>88.6</td>\n",
+       "      <td>168.8</td>\n",
+       "      <td>dohc</td>\n",
+       "      <td>four</td>\n",
+       "      <td>111</td>\n",
+       "      <td>21</td>\n",
+       "      <td>13495.0</td>\n",
+       "      <td>ITA</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>1</td>\n",
+       "      <td>alfa-romero</td>\n",
+       "      <td>convertible</td>\n",
+       "      <td>88.6</td>\n",
+       "      <td>168.8</td>\n",
+       "      <td>dohc</td>\n",
+       "      <td>four</td>\n",
+       "      <td>111</td>\n",
+       "      <td>21</td>\n",
+       "      <td>16500.0</td>\n",
+       "      <td>ITA</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>2</td>\n",
+       "      <td>alfa-romero</td>\n",
+       "      <td>hatchback</td>\n",
+       "      <td>94.5</td>\n",
+       "      <td>171.2</td>\n",
+       "      <td>ohcv</td>\n",
+       "      <td>six</td>\n",
+       "      <td>154</td>\n",
+       "      <td>19</td>\n",
+       "      <td>16500.0</td>\n",
+       "      <td>ITA</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>3</th>\n",
+       "      <td>3</td>\n",
+       "      <td>audi</td>\n",
+       "      <td>sedan</td>\n",
+       "      <td>99.8</td>\n",
+       "      <td>176.6</td>\n",
+       "      <td>ohc</td>\n",
+       "      <td>four</td>\n",
+       "      <td>102</td>\n",
+       "      <td>24</td>\n",
+       "      <td>13950.0</td>\n",
+       "      <td>GER</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>4</th>\n",
+       "      <td>4</td>\n",
+       "      <td>audi</td>\n",
+       "      <td>sedan</td>\n",
+       "      <td>99.4</td>\n",
+       "      <td>176.6</td>\n",
+       "      <td>ohc</td>\n",
+       "      <td>five</td>\n",
+       "      <td>115</td>\n",
+       "      <td>18</td>\n",
+       "      <td>17450.0</td>\n",
+       "      <td>GER</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "   index      company   body-style  wheel-base  length engine-type  \\\n",
+       "0      0  alfa-romero  convertible        88.6   168.8        dohc   \n",
+       "1      1  alfa-romero  convertible        88.6   168.8        dohc   \n",
+       "2      2  alfa-romero    hatchback        94.5   171.2        ohcv   \n",
+       "3      3         audi        sedan        99.8   176.6         ohc   \n",
+       "4      4         audi        sedan        99.4   176.6         ohc   \n",
+       "\n",
+       "  num-of-cylinders  horsepower  average-mileage    price country  \n",
+       "0             four         111               21  13495.0     ITA  \n",
+       "1             four         111               21  16500.0     ITA  \n",
+       "2              six         154               19  16500.0     ITA  \n",
+       "3             four         102               24  13950.0     GER  \n",
+       "4             five         115               18  17450.0     GER  "
+      ]
+     },
+     "execution_count": 16,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df_merge = df.merge(df2, how=\"left\")\n",
+    "print(\"Datenpunkte nach dem merge\", df_merge.shape)\n",
+    "df_merge.head()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "4. Geben Sie in einem DataFrame aus, wieviel Fahrzeuge pro Land vorhanden sind und wie hoch der Durchschnittspreis pro Land liegt."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "metadata": {
+    "scrolled": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead tr th {\n",
+       "        text-align: left;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead tr:last-of-type th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr>\n",
+       "      <th></th>\n",
+       "      <th colspan=\"2\" halign=\"left\">price</th>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th></th>\n",
+       "      <th>count</th>\n",
+       "      <th>mean</th>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>country</th>\n",
+       "      <th></th>\n",
+       "      <th></th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>GER</th>\n",
+       "      <td>10</td>\n",
+       "      <td>22885.000000</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>ITA</th>\n",
+       "      <td>3</td>\n",
+       "      <td>15498.333333</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>JAP</th>\n",
+       "      <td>10</td>\n",
+       "      <td>8971.900000</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>SWE</th>\n",
+       "      <td>2</td>\n",
+       "      <td>13177.500000</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "        price              \n",
+       "        count          mean\n",
+       "country                    \n",
+       "GER        10  22885.000000\n",
+       "ITA         3  15498.333333\n",
+       "JAP        10   8971.900000\n",
+       "SWE         2  13177.500000"
+      ]
+     },
+     "execution_count": 17,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df_merge[[\"country\", \"price\"]].groupby(\"country\").agg([\"count\", \"mean\"])"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Bonus"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "1. Entfernen Sie die Spalte „body-styles“ vom DataFrame."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>index</th>\n",
+       "      <th>company</th>\n",
+       "      <th>wheel-base</th>\n",
+       "      <th>length</th>\n",
+       "      <th>engine-type</th>\n",
+       "      <th>num-of-cylinders</th>\n",
+       "      <th>horsepower</th>\n",
+       "      <th>average-mileage</th>\n",
+       "      <th>price</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>0</td>\n",
+       "      <td>alfa-romero</td>\n",
+       "      <td>88.6</td>\n",
+       "      <td>168.8</td>\n",
+       "      <td>dohc</td>\n",
+       "      <td>four</td>\n",
+       "      <td>111</td>\n",
+       "      <td>21</td>\n",
+       "      <td>13495.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>1</td>\n",
+       "      <td>alfa-romero</td>\n",
+       "      <td>88.6</td>\n",
+       "      <td>168.8</td>\n",
+       "      <td>dohc</td>\n",
+       "      <td>four</td>\n",
+       "      <td>111</td>\n",
+       "      <td>21</td>\n",
+       "      <td>16500.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>2</td>\n",
+       "      <td>alfa-romero</td>\n",
+       "      <td>94.5</td>\n",
+       "      <td>171.2</td>\n",
+       "      <td>ohcv</td>\n",
+       "      <td>six</td>\n",
+       "      <td>154</td>\n",
+       "      <td>19</td>\n",
+       "      <td>16500.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>3</th>\n",
+       "      <td>3</td>\n",
+       "      <td>audi</td>\n",
+       "      <td>99.8</td>\n",
+       "      <td>176.6</td>\n",
+       "      <td>ohc</td>\n",
+       "      <td>four</td>\n",
+       "      <td>102</td>\n",
+       "      <td>24</td>\n",
+       "      <td>13950.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>4</th>\n",
+       "      <td>4</td>\n",
+       "      <td>audi</td>\n",
+       "      <td>99.4</td>\n",
+       "      <td>176.6</td>\n",
+       "      <td>ohc</td>\n",
+       "      <td>five</td>\n",
+       "      <td>115</td>\n",
+       "      <td>18</td>\n",
+       "      <td>17450.0</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "   index      company  wheel-base  length engine-type num-of-cylinders  \\\n",
+       "0      0  alfa-romero        88.6   168.8        dohc             four   \n",
+       "1      1  alfa-romero        88.6   168.8        dohc             four   \n",
+       "2      2  alfa-romero        94.5   171.2        ohcv              six   \n",
+       "3      3         audi        99.8   176.6         ohc             four   \n",
+       "4      4         audi        99.4   176.6         ohc             five   \n",
+       "\n",
+       "   horsepower  average-mileage    price  \n",
+       "0         111               21  13495.0  \n",
+       "1         111               21  16500.0  \n",
+       "2         154               19  16500.0  \n",
+       "3         102               24  13950.0  \n",
+       "4         115               18  17450.0  "
+      ]
+     },
+     "execution_count": 18,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df.drop(\"body-style\", axis=1).head()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "2. Erstellen Sie einen neuen DataFrame der 10% zufällig ausgewählte Zeilen aus dem ursprünglichen DataFrame enthält."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(6, 10)"
+      ]
+     },
+     "execution_count": 19,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df_sample = df.sample(frac=0.1)\n",
+    "df_sample.shape"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "3. Fügen Sie die Zeilen des neuen DataFrames and den ursprünglichen DataFrame unten ran."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(67, 10)\n"
+     ]
+    },
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>index</th>\n",
+       "      <th>company</th>\n",
+       "      <th>body-style</th>\n",
+       "      <th>wheel-base</th>\n",
+       "      <th>length</th>\n",
+       "      <th>engine-type</th>\n",
+       "      <th>num-of-cylinders</th>\n",
+       "      <th>horsepower</th>\n",
+       "      <th>average-mileage</th>\n",
+       "      <th>price</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>0</td>\n",
+       "      <td>alfa-romero</td>\n",
+       "      <td>convertible</td>\n",
+       "      <td>88.6</td>\n",
+       "      <td>168.8</td>\n",
+       "      <td>dohc</td>\n",
+       "      <td>four</td>\n",
+       "      <td>111</td>\n",
+       "      <td>21</td>\n",
+       "      <td>13495.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>1</td>\n",
+       "      <td>alfa-romero</td>\n",
+       "      <td>convertible</td>\n",
+       "      <td>88.6</td>\n",
+       "      <td>168.8</td>\n",
+       "      <td>dohc</td>\n",
+       "      <td>four</td>\n",
+       "      <td>111</td>\n",
+       "      <td>21</td>\n",
+       "      <td>16500.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>2</td>\n",
+       "      <td>alfa-romero</td>\n",
+       "      <td>hatchback</td>\n",
+       "      <td>94.5</td>\n",
+       "      <td>171.2</td>\n",
+       "      <td>ohcv</td>\n",
+       "      <td>six</td>\n",
+       "      <td>154</td>\n",
+       "      <td>19</td>\n",
+       "      <td>16500.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>3</th>\n",
+       "      <td>3</td>\n",
+       "      <td>audi</td>\n",
+       "      <td>sedan</td>\n",
+       "      <td>99.8</td>\n",
+       "      <td>176.6</td>\n",
+       "      <td>ohc</td>\n",
+       "      <td>four</td>\n",
+       "      <td>102</td>\n",
+       "      <td>24</td>\n",
+       "      <td>13950.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>4</th>\n",
+       "      <td>4</td>\n",
+       "      <td>audi</td>\n",
+       "      <td>sedan</td>\n",
+       "      <td>99.4</td>\n",
+       "      <td>176.6</td>\n",
+       "      <td>ohc</td>\n",
+       "      <td>five</td>\n",
+       "      <td>115</td>\n",
+       "      <td>18</td>\n",
+       "      <td>17450.0</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "   index      company   body-style  wheel-base  length engine-type  \\\n",
+       "0      0  alfa-romero  convertible        88.6   168.8        dohc   \n",
+       "1      1  alfa-romero  convertible        88.6   168.8        dohc   \n",
+       "2      2  alfa-romero    hatchback        94.5   171.2        ohcv   \n",
+       "3      3         audi        sedan        99.8   176.6         ohc   \n",
+       "4      4         audi        sedan        99.4   176.6         ohc   \n",
+       "\n",
+       "  num-of-cylinders  horsepower  average-mileage    price  \n",
+       "0             four         111               21  13495.0  \n",
+       "1             four         111               21  16500.0  \n",
+       "2              six         154               19  16500.0  \n",
+       "3             four         102               24  13950.0  \n",
+       "4             five         115               18  17450.0  "
+      ]
+     },
+     "execution_count": 20,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df_both = pd.concat([df, df_sample])\n",
+    "print(df_both.shape)\n",
+    "df_both.head()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "4. Zählen Sie die Anzahl doppelter Einträge in diesem DataFrame."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "6"
+      ]
+     },
+     "execution_count": 21,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df_both.shape[0] - df_both.drop_duplicates().shape[0]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.8.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
