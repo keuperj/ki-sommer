@@ -50,7 +50,7 @@ Daniela Oelke ist Professorin für Maschinelles Lernen an der Hochschule Offenbu
 ## Anmeldung / Kosten
 Die Teilnahme am Kurs ist gebührenfrei. Auf Grund der begrenzten Teilnehmerzahl werden wir bei zu vielen Anmeldungen aber ein Auswahl treffen müssen. Z.B. kann die maximale Anzahl an Teilnehmern einer Firma festgelegt werden.
 
-### [ONLINE ANMELDUNG](https://www.eventbrite.de/e/ki-sommerschule-tickets-167592813617)
+### [ONLINE ANMELDUNG](https://www.eventbrite.de/e/ki-sommer-schule-2022-tickets-370296716447)
 
 **Anmeldeschluß: 9.9. EOD** 
 
