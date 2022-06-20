@@ -1,7 +1,7 @@
 # KI Sommer Schule
-Das ***[Instutute for Machine Learning and Analytics (IMLA)](https://imla.hs-offengurg.de)*** an der Hochschule **Offenburg** veranstalten auch dieses jahr wieder eine **KI Sommerschule**. 
+Das ***[Institute for Machine Learning and Analytics (IMLA)](https://imla.hs-offengurg.de)*** an der Hochschule **Offenburg** veranstaltet auch dieses jahr wieder eine **KI Sommerschule**. 
 
-## Termin Mo 12. - Do 15.9.2021
+## Termin Mo 12. - Do 15.9.2022
 Täglich 9-12.30 Uhr und 13.30-17 Uhr mit Pausen. 
 
 ## Modus
@@ -55,9 +55,9 @@ Die Teilnahme am Kurs ist gebührenfrei. Auf Grund der begrenzten Teilnehmerzahl
 **Anmeldeschluß: 9.9. EOD** 
 
 ## FAQ
-* **Welche Programmierkenntnisse werden vorrausgesetz?** Teilnehmer sollten grundlegende Kenntnisse und Erfahrung im Umgang mit einer Programmiersprache wie Python, Java, C/C++, Matlab usw mitbringen. D.h. einfache Paradigmen wir Schleifen, Klassen und Datenstrukturen sollten geläufig sein. 
+* **Welche Programmierkenntnisse werden vorrausgesetz?** Teilnehmer sollten grundlegende Kenntnisse und Erfahrung im Umgang mit einer Programmiersprache wie Python, Java, C/C++, Matlab usw mitbringen. D.h. einfache Paradigmen wie Schleifen, Klassen und Datenstrukturen sollten geläufig sein. 
 
-* **Kann ich auch nur an Teilen des Kurses Teilnehmen?** Eher nicht. Die Einzelnen Module bauen aufeinander auf und Teilnehmer sollten an allen Modulen teilnehmen. Im Einzelfall kann natürlich mal ein Modul aus terminlichen Gründen ausgelassen werden.
+* **Kann ich auch nur an Teilen des Kurses teilnehmen?** Eher nicht. Die Einzelnen Module bauen aufeinander auf und Teilnehmer sollten an allen Modulen teilnehmen. Im Einzelfall kann natürlich mal ein Modul aus terminlichen Gründen ausgelassen werden.
 
 
 ## Impressum / Kontakt
