@@ -1,5 +1,5 @@
 # KI Sommer Schule
-Das ***Instutute for Machine Learning and Analytics (IMLA)*** an der Hochschule **Offenburg** veranstalten auch dieses jahr wieder eine **KI Sommerschule**. 
+Das ***[Instutute for Machine Learning and Analytics (IMLA)](https://imla.hs-offengurg.de)*** an der Hochschule **Offenburg** veranstalten auch dieses jahr wieder eine **KI Sommerschule**. 
 
 ## Termin Mo 12. - Do 15.9.2021
 Täglich 9-12.30 Uhr und 13.30-17 Uhr mit Pausen. 
@@ -11,7 +11,7 @@ In der Sommerschule werden die Grundlagen aktueller KI und Machine Learning Meth
 Derzeit planen wir mit einer Präsentzveranstaltung nach den 3G Regeln, d.h. Teilnehmer müssen geimpft, genesen oder getestet sein. Sollten sich die Rahmenbedingungen bis zum Kurs ändern, ist auch ein Wechsel auf ein reines Online-Format möglich. 
 
 ### Veranstaltungsorte
-Der Kurs wird tageweise an der HS Offenburg durchgeführt (siehe Programm). Kursräume und Anfahrtsbeschreibungen werden den Teilnehmern rechtzeitig mitgeteilt.
+Der Kurs wird an der HS Offenburg durchgeführt. Kursräume und Anfahrtsbeschreibungen werden den Teilnehmern rechtzeitig mitgeteilt.
 
 ## Zielgruppe
 Zielgruppe sind Mitarbeiterinnen und Mitarbeiter aus Fachabteilungen oder der IT-Abteilung von Unternehmen, die über IT-Kenntnisse und grundlegende Programmierkenntnisse verfügen. Der Kurs ist für Einsteiger im Bereich KI / Machine Learning ausgelegt. 
@@ -25,13 +25,27 @@ Klaus Dorer ist Leiter des Labors Autonome Systeme an der Hochschule Offenburg. 
 Janis Keuper leitet das "Institute for Machine Learning and Analytics" (IMLA) an der HS Offenburg. Seine Forschungsgebiete liegen in den Bereichen "Large Scale Machine Learning" / Big Data, Generativen Lernmethoden und der Sicherheit und Robustheit von KI Verfahren. In den Kurs wird er seine langjährige Erfahrung aus einer Vielzahl von Industrieprojekten mit einem sehr breiten Anwendungsspektrum einbringen.
 
 ### Pfarrer Gernot Meier (ev. Landeskirche Baden)
-
+- to do 
 
 ### Prof. Dr. Daniela Oelke (HS Offenburg)
 Daniela Oelke ist Professorin für Maschinelles Lernen an der Hochschule Offenburg. Ihr Forschungsschwerpunkt liegt im Bereich der Visuellen Datenanalyse und der Erklärbaren Künstlichen Intelligenz. In dem Kurs wird sie Methoden zur Verarbeitung natürlichsprachlicher Daten vorstellen.
 
 ## Vorläufiges Programm
-- kommt bald -
+### 1. Tag
+* Einführung
+* Grundlegende Konzepte
+* Machine Learning mit KNIME
+
+### 2. Tag
+* Algorithmen zur Klassifikation und Regression
+* Unüberwachtes Lernen
+* Ethik und Gesellschaftliche Auswirkungen von KI  
+
+### 3. Tag
+* Hackathon / "hands-on" Projekt
+
+### 4. Tag
+* Deep Learning
 
 ## Anmeldung / Kosten
 Die Teilnahme am Kurs ist gebührenfrei. Auf Grund der begrenzten Teilnehmerzahl werden wir bei zu vielen Anmeldungen aber ein Auswahl treffen müssen. Z.B. kann die maximale Anzahl an Teilnehmern einer Firma festgelegt werden.
@@ -41,7 +55,7 @@ Die Teilnahme am Kurs ist gebührenfrei. Auf Grund der begrenzten Teilnehmerzahl
 **Anmeldeschluß: 9.9. EOD** 
 
 ## FAQ
-* **Welche Programmierkenntnisse werden vorrausgesetz?** Teilnehmer sollten grundlegende Kenntnisse und Erfahrung im Umgang mit einer Programmiersprache wie Python, Java, C/C++, Matlab usw mitbringen. D.h. einfache Paradigmen wir Schleifen, Klassen und Datenstrukturen sollten geläufig sein. Der Kurs wird in die Python-Grundlagen einführen. 
+* **Welche Programmierkenntnisse werden vorrausgesetz?** Teilnehmer sollten grundlegende Kenntnisse und Erfahrung im Umgang mit einer Programmiersprache wie Python, Java, C/C++, Matlab usw mitbringen. D.h. einfache Paradigmen wir Schleifen, Klassen und Datenstrukturen sollten geläufig sein. 
 
 * **Kann ich auch nur an Teilen des Kurses Teilnehmen?** Eher nicht. Die Einzelnen Module bauen aufeinander auf und Teilnehmer sollten an allen Modulen teilnehmen. Im Einzelfall kann natürlich mal ein Modul aus terminlichen Gründen ausgelassen werden.
 
