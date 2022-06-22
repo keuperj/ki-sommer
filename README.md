@@ -25,7 +25,7 @@ Klaus Dorer ist Leiter des Labors Autonome Systeme an der Hochschule Offenburg. 
 Janis Keuper leitet das "Institute for Machine Learning and Analytics" (IMLA) an der HS Offenburg. Seine Forschungsgebiete liegen in den Bereichen "Large Scale Machine Learning" / Big Data, Generativen Lernmethoden und der Sicherheit und Robustheit von KI Verfahren. In den Kurs wird er seine langjährige Erfahrung aus einer Vielzahl von Industrieprojekten mit einem sehr breiten Anwendungsspektrum einbringen.
 
 ### Pfr. Dr. phil. Gernot Meier (Ev. Landeskirche Baden / Evangelische Akademie)
-- to do 
+Gernot Meier ist Kulturwissenschaftler und Pfarrer der Evangelischen Landeskirche in Baden. Er ist stlv. Akademiedirektor / Studienleiter und Beauftragter für Ethik und Theologie der Digitalisierung, sowie Lehrbeauftragter im Zentrum für europäische Geschichts- und Kulturwissenschaften der UNI Heidelberg. Im ILMA des HSO befasst er sich mit Fragen zur digitalen Kultur und der sog. digitalen Ethik / Maschinenethik.
 
 ### Prof. Dr. Daniela Oelke (HS Offenburg)
 Daniela Oelke ist Professorin für Maschinelles Lernen an der Hochschule Offenburg. Ihr Forschungsschwerpunkt liegt im Bereich der Visuellen Datenanalyse und der Erklärbaren Künstlichen Intelligenz, außerdem beschäftigt sie sich mit der automatischen Verarbeitung natürlicher Sprachen.
@@ -39,7 +39,7 @@ Daniela Oelke ist Professorin für Maschinelles Lernen an der Hochschule Offenbu
 ### 2. Tag
 * Algorithmen zur Klassifikation und Regression
 * Unüberwachtes Lernen
-* Ethik und Gesellschaftliche Auswirkungen von KI  
+* Ethik, Digtialisierung und KI  
 
 ### 3. Tag
 * Hackathon / "hands-on" Projekt
