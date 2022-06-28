@@ -1,5 +1,5 @@
 # KI-Sommerschule
-Das ***[Institute for Machine Learning and Analytics (IMLA)](https://imla.hs-offenburg.de)*** an der Hochschule **Offenburg** veranstaltet auch dieses Jahr wieder eine **KI-Sommerschule**. 
+Das ***[Institute for Machine Learning and Analytics (IMLA)](https://imla.hs-offenburg.de)*** an der Hochschule **Offenburg** veranstaltet auch dieses Jahr wieder eine gemeinsame **KI-Sommerschule** mit der ***[Akademie der Ev. Landeskirche Baden](https://www.ekiba.de/akademie-baden/)***. 
 
 ## Termin Mo 12.9. - Do 15.9.2022
 Täglich 9-12.30 Uhr und 13.30-17 Uhr mit Pausen. 
@@ -50,10 +50,9 @@ Daniela Oelke ist Professorin für Maschinelles Lernen an der Hochschule Offenbu
 ## Anmeldung / Kosten
 Die Teilnahme am Kurs ist gebührenfrei. Auf Grund der begrenzten Teilnehmerzahl werden wir bei zu vielen Anmeldungen aber ein Auswahl treffen müssen. Beispielsweise kann die maximale Anzahl an Teilnehmern einer Firma festgelegt werden.
 
-### [ONLINE ANMELDUNG]
-* ab 1.7.22
-
-**Anmeldeschluß: 9.9. EOD** 
+### [-> ONLINE ANMELDUNG](https://events.hs-offenburg.de/e/ki-sommer) 
+* die Teilnehmerzahl ist auf 20 beschränkt (Warteliste) 
+* **Anmeldeschluß: 1.9. ** 
 
 ## FAQ
 * **Welche Programmierkenntnisse werden vorausgesetzt?** Grundlegende Kenntnisse und Erfahrungen im Umgang mit einer Programmiersprache wie Python, Java, C/C++, Matlab sind vorteilhaft, aber aufgrund der Verwendung des Tools KNIME keine zwingende Voraussetzung.
