@@ -62,7 +62,7 @@ Die Teilnahme am Kurs ist gebührenfrei. Auf Grund der begrenzten Teilnehmerzahl
 
 ### [-> ONLINE ANMELDUNG](https://events.hs-offenburg.de/e/ki-sommer) 
 * die Teilnehmerzahl ist auf 20 beschränkt (Warteliste) 
-* **Anmeldeschluß: 1.9. ** 
+* **Anmeldeschluß: 1.9.** 
 
 ## FAQ
 * **Welche Programmierkenntnisse werden vorausgesetzt?** Grundlegende Kenntnisse und Erfahrungen im Umgang mit einer Programmiersprache wie Python, Java, C/C++, Matlab sind vorteilhaft, aber aufgrund der Verwendung des Tools KNIME keine zwingende Voraussetzung.
