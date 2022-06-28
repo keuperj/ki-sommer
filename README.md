@@ -1,4 +1,14 @@
+
 # KI-Sommerschule
+
+<table>
+<tr>
+<td><img src="RGB_IMLA_RGB_Claim_Farbe.jpg" width=300></td>
+<td><img src="logo_ekiba_farbe_2-zeilig_280px_1.png" width=300></td>
+</tr>
+</table>
+
+
 Das ***[Institute for Machine Learning and Analytics (IMLA)](https://imla.hs-offenburg.de)*** an der Hochschule **Offenburg** veranstaltet auch dieses Jahr wieder eine gemeinsame **KI-Sommerschule** mit der ***[Akademie der Ev. Landeskirche Baden](https://www.ekiba.de/akademie-baden/)***. 
 
 ## Termin Mo 12.9. - Do 15.9.2022
